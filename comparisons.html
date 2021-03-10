@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--bootstrap-->
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+<!--navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand latitude-color" style="background-color: #0BADA6;" href="index.html"><strong>Latitude</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-color" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="visualization-page1.html">Max Temperature</a>
+            <a class="dropdown-item" href="visualization-page2.html">Humidity</a>
+            <a class="dropdown-item" href="visualization-page3.html">Cloudiness</a>
+            <a class="dropdown-item" href="visualization-page4.html">Wind Speed</a>            
+            <!-- <div class="dropdown-divider"></div> -->
+            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+          </div>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="comparisons.html">Comparison <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cities_data.html">Data</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+<!-- begin comparison maps-->
+<div class="container">
+    <div class="row">
+        <div class="box">
+          <h3 class="title">Comparison: Latitude vs X</h3>
+          <hr>
+          <p>Click any plot to get an in-depth analysis.</p>
+        </div>
+    </div>
+  </div>
+
+<!--maps display-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="title">vs. Cloudiness</div>
+                <a href="cloudiness_viz.html">
+                <img class="panel" src="assets/images/cloudiness.png" alt="Cloudiness Map" class="img-thumbnail">
+                </a>
+            </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="title">vs. Humidity</div>
+                <a href="humidity.html">
+                <img class="panel" src="assets/images/humidity.png" alt="Humidity Map" class="img-thumbnail">
+                </a>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="title">vs. Max Temperature</div>
+                <a href="max_temp_viz.html">
+                <img class="panel" src="assets/images/max_temp.png" alt="Max Temperature Map" class="img-thumbnail">
+                </a>
+            </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="title">vs. Wind Speed</div>
+                <a href="wind_speed_viz.html">
+                <img class="panel" src="assets/images/wind_speed.png" alt="Wind Speed Map" class="img-thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+    
