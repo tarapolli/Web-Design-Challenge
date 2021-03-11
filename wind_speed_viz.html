@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--bootstrap-->
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+<!--navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand latitude-color"  style="background-color: #0BADA6;" href="index.html"><strong>Latitude</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-color" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="max_temp_viz.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity_viz.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness_viz.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind_speed_viz.html">Wind Speed</a>             
+          </div>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="comparisons.html">Comparison <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cities_data.html">Data</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- wind speed code-->
+<div class = "container">
+    <div class="row">                          
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <h2>Wind Speed</h2>
+                    <hr>
+                    <img class= "image" src="assets/images/wind_speed.png"  alt="Wind Speed Map">
+                    <p>Here is the Latitude vs. Wind Speed Map.</p>
+                <br>        
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                    <div class="panel-body">                                    
+                        <h2>Visualizations</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a href="max_temp_viz.html">
+                                    <img class = "img img-responsive" src="assets/images/max_temp.png" style="width:100%" alt=""></a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a href="humidity_viz.html">
+                                    <img class = "img img-responsive" src="assets/images/humidity.png" style="width:100%" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a href="cloudiness_viz.html">
+                                    <img class = "img img-responsive" src="assets/images/cloudiness.png" style="width:100%" alt=""></a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a href="wind_speed_viz.html">
+                                    <img class = "img img-responsive" src="assets/images/wind_speed.png" style="width:100%" alt=""></a>
+                            </div>
+                        </div> 
+            </div>
+        </div>     
+    </div>    
+</div>
+
+  <!-- JavaScript template from GetBootstrap! -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+</body>
+
+</html>
