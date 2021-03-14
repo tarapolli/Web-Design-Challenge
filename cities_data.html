@@ -1,59 +1,55 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
+<!--bootstrap-->
 <head>
-
   <meta charset="UTF-8">
-  <title>Bootstrap Demo</title>
-
-  <!-- Bring in our bootstrap stylesheet -->
+  <title>WeatherPy Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
 
+<!--navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="max_temp_viz.html">Max Temperature</a>
+          <a class="dropdown-item" href="humidity_viz.html">Humidity</a>
+          <a class="dropdown-item" href="cloudiness_viz.html">Cloudiness</a>
+          <a class="dropdown-item" href="wind_speed_viz.html">Wind Speed</a>  
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="comparisons.html">Compairisons</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cities_data.html">Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Latitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Cloudiness</a>
-            <a class="dropdown-item" href="#">Humidity</a>
-            <a class="dropdown-item" href="#">Max Temp</a>
-            <a class="dropdown-item" href="#">Wind Speed</a>
-          </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Comparison</a>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Data</a>
-        </li>
-    </div>
-  </nav>
-
+<!-- begin table-->
   <div class="container">
-
-   <h1>Data
-     </h1>
-
+   <h2>Data
+     </h2>
+     <hr>
+     <p>The following table includes all of the data used for plotting during this project.</p>
     <!-- Row 1 -->
     <div class="row">
       <div class="col-md-12">
   <div class="table-responsive">
-
 <table class="table table-striped">
   <thead>
     <tr style="text-align: right;">
