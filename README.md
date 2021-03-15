@@ -8,6 +8,7 @@ For this homework, I created a visualization dashboard website using visualizati
 •	data page where we can view the data used to build them
 
 For reference, we were given screen shots from a similar dashboard. See link below of my final dashboard:
+https://tarapolli.github.io/Web-Design-Challenge/
 
 
 
